@@ -37,7 +37,8 @@ public class Main {
                     break;
                 case (3):
                     SBI ob3 = new SBI();
-                    ob3.getRateOfInterest();
+                    ob3.setSbiROI(7);
+                    System.out.println(ob3.getSbiROI()+"%");
                     break;
             }
         }
@@ -64,7 +65,8 @@ public class Main {
                     break;
                 case (3):
                     Andhra ob3 = new Andhra();
-                    ob3.getRateOfInterest();
+                    ob3.setAndhraROI(6);
+                    System.out.println(ob3.getAndhraROI()+"%");
                     break;
             }
 

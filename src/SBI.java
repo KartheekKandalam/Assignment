@@ -1,11 +1,5 @@
 class SBI extends Bank {
 
-    @Override
-    int getRateOfInterest() {
-        int ROI1=6;
-        System.out.println(ROI1+"%");
-        return 0;
-    }
 
     @Override
     void withdraw() {
