@@ -1,13 +1,28 @@
-class SBI extends Bank {
+class SBI extends Bank{
 
 
     @Override
-    void withdraw() {
+    void withdraw(int x) throws CustomException{
+            if(x<100 || x>5000){
+
+                throw new CustomException("Amount is out of range");
+        }
+            else
+        {
         System.out.println("the amount is withdrawn from your SBI bank");
+        }
     }
 
     @Override
-    void deposit() {
-        System.out.println("the amount is deposit from your SBI bank");
+    void deposit(int x) throws CustomException {
+        if(x<100||x>5000){
+
+            throw new CustomException("Amount is out of range");
+        }
+        else
+        {
+            System.out.println("the amount is deposited into your SBI bank");
+        }
     }
-}
+    }
+
